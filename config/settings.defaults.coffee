@@ -136,7 +136,7 @@ module.exports = settings =
 		filestore:
 			url: "http://#{process.env['FILESTORE_HOST'] or 'localhost'}:3009"
 		clsi:
-			url: "http://#{process.env['CLSI_HOST'] or 'localhost'}:3013"
+			url: "http://#{process.env['CLSI_HOST'] or '172.17.0.2'}:3013"
 			# url: "http://#{process.env['CLSI_LB_HOST']}:3014"
 			backendGroupName: undefined
 		templates:
